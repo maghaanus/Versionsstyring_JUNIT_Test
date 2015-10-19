@@ -9,7 +9,7 @@ public class TestCases {
 	Billetautomat automat = new Billetautomat();
 	
 	@Test
-	public void test() {
+	public void testAfMontørkoderSetBilletpris() {
 		 
 		int retur;
 		
@@ -20,5 +20,7 @@ public class TestCases {
 		assertEquals(10, retur);
 		
 	}
+	
+
 
 }
