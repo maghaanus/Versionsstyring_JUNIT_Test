@@ -32,7 +32,26 @@ public class TestCases {
 
 		assertEquals(0, retur);
 
-		int antalFejl = 0;
 	}
+	@Test
+	public void testIndtjening() {
 
+		automat.montørLogin("1234");
+		
+		for (int i = 0; i < 2; i++) {
+			automat.indsætPenge(10);
+			automat.udskrivBillet();
+		}
+		automat.setBilletpris(20);
+		for (int i = 0; i < 2; i++) {
+			automat.indsætPenge(20);
+			automat.udskrivBillet();
+		}	
+		
+		assertEquals(automat.getTotal(), 60);
+
+	}
 }
+//		automat.indsætPenge(0);
+//		automat.udskrivBillet();
+//		retur = automat.returpenge();
