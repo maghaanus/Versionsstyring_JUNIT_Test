@@ -9,6 +9,8 @@ public class BenytBilletautomat
 		Billetautomat automat = new Billetautomat();
 		java.util.Scanner tastatur = new java.util.Scanner(System.in);  // forbered
 
+		tastatur.close();
+		
 		System.out.println("BenytBilletautomat version 3");
 		System.out.println();
 		
